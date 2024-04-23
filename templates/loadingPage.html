@@ -1,0 +1,30 @@
+<!-- ProgressPage.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <style>
+      .spinner-border{
+        display: flex;
+        justify-content : center;
+        align-items: center;
+      }
+    </style>
+  </head>
+   <body style="background-color: black">
+    <div class="spinner-border text-light" id="customSpinner" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+    <div id="output" class="row">
+    </div>
+    <script src="{{ url_for('static', filename='scripts/loading.js') }}"></script>
+  </body>
+</html> 

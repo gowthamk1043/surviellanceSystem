@@ -1,0 +1,29 @@
+<!-- ProgressPage.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <style>
+
+  </style>
+  <body>
+    <div class="top">
+      <a href="/" type="button" class="btn btn-secondary backButton">Back</a>
+      <h1>Video Output</h1>
+    </div>
+    <div id="outputContainer">
+      <video id="outputVideo" class="outputVideo" controls width = "640px" height = "360px">
+        <source id="outputVideoSource" src="{{ url_for('static', filename='resources/videos/BrowserVideos/fightdetect.mp4') }}" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </body>
+</html>

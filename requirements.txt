@@ -1,0 +1,13 @@
+opencv-python
+torch
+torchvision==0.15.2
+natsort
+pytorchvideo
+scipy
+pandas
+matplotlib
+seaborn
+flask
+flask_ngrok
+pyngrok
+moviepy
