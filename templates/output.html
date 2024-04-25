@@ -1,3 +1,4 @@
+
 <!-- ProgressPage.html -->
 
 <!DOCTYPE html>
@@ -25,9 +26,10 @@
     }
 
     .top{
+      color:black;
       text-align: center;
       position: relative;
-      top:100px; 
+      top:150px; 
       font-variant: small-caps;
       
     }
@@ -47,6 +49,17 @@
     video{
       border-radius:8px;
     }
+
+    a{
+      text-decoration: none;
+      color: deepskyblue;
+      font-style: normal;
+    }
+
+    a:hover{
+      color: black;
+      text-decoration: none;
+    }
   </style>
   <body>
     <div class="top">
@@ -58,7 +71,8 @@
         
         <source id="outputVideoSource" src="{{ url_for('static', filename='resources/videos/BrowserVideos/fightdetect.mp4') }}" type="video/mp4" />
         Your browser does not support the video tag.
-      </video><p>Fighting clips are dispatched to Telegram....</p>
+      </video><p>Fighting clips are dispatched to 
+        <a href="https://web.telegram.org/k/#-4108912366">Telegram</a>...</p>
     </div>
   </body>
 </html>
