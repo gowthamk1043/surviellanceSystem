@@ -10,13 +10,18 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-
     <style>
-      .spinner-border{
-        display: flex;
-        justify-content : center;
-        align-items: center;
+      body{
+        text-align: center;
+        padding-top: 20%;
       }
+      .txt{
+        color: white;
+        font-size: x-large;
+        padding-top: 15px;
+      }
+        
+      
     </style>
   </head>
    <body style="background-color: black">
@@ -24,7 +29,10 @@
       <span class="visually-hidden"></span>
     </div>
     <div id="output" class="row">
-    </div>
+    </div class="spin">
     <script src="{{ url_for('static', filename='scripts/loading.js') }}"></script>
+    <div class="txt">
+      Please Wait!!
+    </div>
   </body>
-</html> 
+</html>
