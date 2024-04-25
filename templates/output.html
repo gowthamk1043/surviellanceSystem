@@ -12,18 +12,53 @@
     />
   </head>
   <style>
+    *{
+      margin : 0;
+      padding : 0;
+    }
 
+    body{
+      background:red;
+      width: 100vw;
+      height: 100vh;
+      color: white;
+    }
+
+    .top{
+      text-align: center;
+      position: relative;
+      top:100px; 
+      font-variant: small-caps;
+      
+    }
+    #outputContainer{
+      height: 90%;
+      display :flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content:center;
+    }
+
+    #outputContainer p{
+        margin-top: 20px;
+        font-style: italic;
+    }
+
+    video{
+      border-radius:8px;
+    }
   </style>
   <body>
     <div class="top">
-      <a href="/" type="button" class="btn btn-secondary backButton">Back</a>
+     <!--<a href="/" type="button" class="btn btn-secondary backButton">Back</a>!-->
       <h1>Video Output</h1>
     </div>
     <div id="outputContainer">
-      <video id="outputVideo" class="outputVideo" controls width = "640px" height = "360px">
+      <video id="outputVideo" class="outputVideo" controls width = "500px" height = "300px">
+        
         <source id="outputVideoSource" src="{{ url_for('static', filename='resources/videos/BrowserVideos/fightdetect.mp4') }}" type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video><p>Fighting clips are dispatched to Telegram....</p>
     </div>
   </body>
 </html>
