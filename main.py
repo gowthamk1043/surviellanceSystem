@@ -218,7 +218,8 @@ if __name__=="__main__":
     print(config)
     main(config)
     
-    if(runMode == "CPU"):
-        arguments = ['--input', 'static/videos/Test_Videos' + fileName, '--output', 'static/videos/Output_Videos/fightdetect.mp4', '--device', 'cpu']
-    else:
-        arguments = ['--input',  'static/videos/Test_Videos' + fileName, '--output', 'static/videos/Output_Videos/fightdetect.mp4']
+    staticVideos = "static/resources/videos/"
+    input_file_path = staticVideos + "Output_Videos/fightdetect.mp4"
+    output_file_path = staticVideos + "BrowserVideos/fightdetect.mp4" 
+    clip = VideoFileClip(input_file_path)
+    clip.write_videofile(output_file_path, codec='libx264', fps=30, preset='ultrafast')
