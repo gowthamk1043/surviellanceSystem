@@ -8,7 +8,7 @@ process = None
 from pyngrok import ngrok
 app = Flask(__name__)
 
-ngrok.set_auth_token("2fwMwNaEGfeZGFbQ9rUGJegpLPD_5axMg6kyF42RiMwL9ziCw")
+ngrok.set_auth_token("2g4zRibakfvSmk1aplg3XxGaGKI_3dyAzuscSvpjZo6fxA5KV")
 public_url=ngrok.connect(5000).public_url
 print(public_url)
 
